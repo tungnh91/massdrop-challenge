@@ -1,0 +1,62 @@
+section {
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+}
+div#content {
+  float: left;
+  width: 55%;
+  min-height: 400px;
+  /*background-color: aqua;*/
+}
+
+div#info {
+  float: right;
+  width: 45%;
+  height: 400px;
+  /*background-color: red;*/
+  /*margin-left: 15%;*/
+}
+
+#status-message {
+  @extend .icon;
+  background: url('../styles/assets/text.svg');
+  &.active {
+    background: url('../styles/assets/text-white.svg');
+  }
+  @include phone {
+    flex:1;
+  }
+}
+
+/* --------JOBS TABLE------------ */
+
+.table-jobs {
+  width: 90%;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+.table-jobs th, tr {
+  text-align: center;
+  border-bottom: solid 1px black;
+}
+
+.table-jobs td {
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-id {
+  width: 20%;
+}
+.row-action {
+  width: 30%;
+}
+.row-url {
+  width: 50%;
+}
+
+

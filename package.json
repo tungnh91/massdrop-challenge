@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server/server.js --exec babel-node --presets es2015,stage-2"
+    "start": "nodemon src/server/server.js --exec babel-node --presets es2015,stage-2",
+    "build": "webpack -p && babel src/server -d dist --presets es2015,stage-2"
   },
   "repository": {
     "type": "git",
@@ -23,16 +24,21 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.17.2",
+    "crypto": "^1.0.1",
     "express": "^4.15.4",
     "nodemon": "^1.11.0",
     "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "redis": "^2.8.0",
     "request": "^2.81.0",
     "webpack": "^3.5.5"
   },
   "devDependencies": {
     "babel-core": "*",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
     "babel-preset-stage-2": "*"
   }
 }

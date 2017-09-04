@@ -1,0 +1,29 @@
+{
+  "name": "massdrop-challenge",
+  "version": "1.0.0",
+  "description": "a web crawler with restAPI",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tungnh91/massdrop-challenge.git"
+  },
+  "author": "Tim Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tungnh91/massdrop-challenge/issues"
+  },
+  "homepage": "https://github.com/tungnh91/massdrop-challenge#readme",
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "react": "^15.6.1",
+    "redis": "^2.8.0",
+    "webpack": "^3.5.5"
+  }
+}

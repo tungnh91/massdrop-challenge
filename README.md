@@ -1,5 +1,5 @@
 # Massdrop challenge
-A Web crawler with a restAPI 
+A Web crawler with a REST API interface that lets user add url to a queue as well as check its status.
 
 ![](./docs/demo.gif)
 
@@ -22,6 +22,24 @@ This repository is the source of truth for this application, used to:
  - Get a better understanding of underlying technologies that were used to build the application
  - Contribute to the project by openning pull request against the dev branch
  - Test existing APIs and components
+ ### API
+ Add an URL to the job queue
+ ```
+ curl --data "url=www.anysite.com" localhost:8000/jobs
+ ```
+ Get status of a job using a JobID
+ ```
+ curl localhost:8000/jobs/JobID
+ ```
+ Get the HTML of a retrived site using its JobID
+ ```
+ curl localhost:8000/redirect/JobID
+ ```
+ Change frequency that worker wakes up and fetches html 
+ (Default at 10000 ms)
+ ```
+ curl --data "freq=30000" localhost:8000/worker
+ ```
 
 ## Technologies
 

@@ -28,6 +28,7 @@
     "express": "^4.15.4",
     "nodemon": "^1.11.0",
     "react": "^15.6.1",
+    "react-bootstrap": "^0.31.2",
     "react-dom": "^15.6.1",
     "redis": "^2.8.0",
     "request": "^2.81.0",

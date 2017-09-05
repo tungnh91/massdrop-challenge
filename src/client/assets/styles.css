@@ -5,48 +5,25 @@ section {
 }
 div#content {
   float: left;
-  width: 55%;
+  width: 90%;
   min-height: 400px;
-  /*background-color: aqua;*/
 }
 
 div#info {
   float: right;
   width: 45%;
   height: 400px;
-  /*background-color: red;*/
-  /*margin-left: 15%;*/
 }
 
 #status-message {
-  @extend .icon;
-  background: url('../styles/assets/text.svg');
-  &.active {
-    background: url('../styles/assets/text-white.svg');
-  }
-  @include phone {
-    flex:1;
-  }
+  color: red;
+  padding: 10px 0;
 }
 
-/* --------JOBS TABLE------------ */
 
-.table-jobs {
-  width: 90%;
-  table-layout: fixed;
-  white-space: nowrap;
-}
-
-.table-jobs th, tr {
-  text-align: center;
-  border-bottom: solid 1px black;
-}
-
-.table-jobs td {
-  padding: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+#title {
+  font-size: 22;
+  color: darkslategray;
 }
 
 .row-id {
@@ -59,4 +36,10 @@ div#info {
   width: 50%;
 }
 
+.popover {
+  position: relative;
+}
 
+.popover .right {
+  margin-left: 56px;
+}

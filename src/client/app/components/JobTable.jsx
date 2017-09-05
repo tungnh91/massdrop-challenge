@@ -1,8 +1,11 @@
 import React, { PropTypes } from 'react';
 import JobEntry from './JobEntry.jsx';
-
+import { Table } from 'react-bootstrap';
+/**
+ * JobTable Component renders a table that serves as a skeleton for JobEntry
+ */
 const JobTable = ({ jobs, updateStatus }) => (
-  <table className="table-jobs">
+  <Table striped bordered condensed hover>
     <thead>
     <tr>
       <th className="row-id">Job Id</th>
@@ -16,7 +19,7 @@ const JobTable = ({ jobs, updateStatus }) => (
       jobs.map(job => <JobEntry key={job.jobId} job={job} updateStatus={updateStatus} />)
     }
     </tbody>
-  </table>
+  </Table>
 ); 
 
 JobTable.propTypes = {
